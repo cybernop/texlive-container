@@ -30,7 +30,7 @@ jobs:
         with:
           images: cybernop/texlive
           tags: |
-            latest
+            ${{ matrix.os_version }}
 
       - name: Build and push Docker image
         id: build-and-push
